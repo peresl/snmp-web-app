@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Monitor Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Alterado para um tom mais profissional */
+        }
+
+        form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px; /* Definindo largura do formulário */
+            transition: transform 0.3s ease-in-out; /* Adicionando animação de transição */
+        }
+
+        h2 {
+            margin-bottom: 20px; /* Adicionando espaço abaixo do título */
+            color: #007bff; /* Cor azul */
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"],
+        input[type="button"] {
+            width: 100%; /* Ajustando largura dos campos e botões */
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 16px; /* Ajustando tamanho da fonte */
+            color: #555; /* Cor do texto */
+            transition: all 0.3s ease-in-out; /* Adicionando animação de transição */
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none; /* Removendo a borda de foco */
+            border-color: #007bff; /* Cor da borda quando em foco */
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            margin-top: 10px; /* Adicionando margem superior aos botões */
+            width: calc(50% - 5px); /* Ajustando largura dos botões */
+            background-color: #007bff; /* Cor de fundo dos botões */
+            color: #fff; /* Cor do texto dos botões */
+            cursor: pointer; /* Alterando o cursor para indicar que é clicável */
+            transition: background-color 0.3s; /* Adicionando transição suave */
+        }
+
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: #0056b3; /* Cor de fundo dos botões quando hover */
+        }
+
+        form:hover {
+            transform: scale(1.05); /* Aumentando o tamanho do formulário quando o mouse estiver sobre ele */
+        }
+    </style>
+</head>
+<body>
+    <form action="/ProjetoWeb/index.html" method="post" target="_self">
+        <h2>Web Monitor SNMP</h2>
+        <input type="text" name="username" placeholder="Usuário" required>
+        <input type="password" name="password" placeholder="Senha" required>
+        <input type="button" value="Cadastrar" onclick="window.location.href='cadastro.html'">
+        <input type="submit" value="Entrar">
+        
+    </form>
+</body>
+</html>
